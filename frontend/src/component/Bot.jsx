@@ -17,7 +17,7 @@ function Bot() {
     setLoading(true);
     if (!input.trim()) return;
     try {
-      const res = await axios.post("http://localhost:4002/bot/v1/message", {
+      const res = await axios.post("https://chatbot-4-vpwd.onrender.com/bot/v1/message", {
         text: input,
       });
       if (res.status === 200) {
